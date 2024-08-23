@@ -1,3 +1,4 @@
+# Fixes index.html issue with ***
 $sourceDir = "D:\databasePlayer\medias\medias"
 $replacementFile = "c:\temp\index.html"
 $logFile = "c:\logs\replace-index.log"
@@ -10,7 +11,7 @@ if (-not (Test-Path $replacementFile)) {
     exit 1
 }
 
-# Get all index.html files in the source directory and its subdirectories
+# Get all 0kb index.html files in the source directory and its subdirectories
 $emptyFiles = Get-ChildItem -Path $sourceDir -Recurse -Filter "index.html" | Where-Object { $_.Length -eq 0 }
 
 foreach ($file in $emptyFiles) {
