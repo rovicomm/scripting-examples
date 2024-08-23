@@ -1,4 +1,4 @@
-Sets the screen orientation to portrait based on hardware identifier in registry.
+# Sets the screen orientation to portrait based on hardware identifier in registry.
 # HB 2024-03-14
 
 $switchlog = "C:\logs\set-portrait.log"
